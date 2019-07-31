@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5F9EA0"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textColor="#191970"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:textColor="#0000FF"
+        android:id="@+id/user_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:textColor="#0000FF"
+        android:id="@+id/user_pass"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lo"
+        android:text="Login"
+        android:textColor="#0000FF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="userLogin"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="userReg"
+        android:layout_marginLeft="250dp"
+        android:text="Register Now"
+        android:textColor="#0000FF" />
+
+</LinearLayout>

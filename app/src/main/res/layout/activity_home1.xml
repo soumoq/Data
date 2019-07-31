@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000cd"
+    tools:context=".Home1">
+
+    <Button
+        android:id="@+id/sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:onClick="sell_p"
+        android:text="Sell now" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/user"
+
+        android:text="User"
+        android:textSize="30dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="profile"
+        android:onClick="user"/>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="20dp"
+        android:id="@+id/list"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>

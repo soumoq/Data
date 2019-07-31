@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5F9EA0"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="User name"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:textColor="#0000FF"
+        android:id="@+id/name"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+        android:textColor="#0000FF"
+        android:id="@+id/new_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/new_user_pass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:textColor="#0000FF"
+        android:inputType="textPassword" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:drawableLeft="@drawable/ic_smartphone_black_24dp"
+        android:textColor="#0000FF"
+        android:id="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/new_user_name"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#191970"
+        android:layout_marginLeft="250dp"
+        android:layout_below="@+id/new_user_pass"
+        android:layout_marginTop="100dp"
+        android:onClick="userReg"
+        />
+
+</RelativeLayout>

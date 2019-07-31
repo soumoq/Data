@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sell">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:id="@+id/image"
+            android:layout_below="@+id/sell"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/b_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:hint="Book name"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:inputType="number"
+            android:hint="@string/price"
+            android:layout_below="@+id/b_name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:hint="Nuthor Name"
+            android:id="@+id/atr_name" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/sell"
+            android:text="User"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell"
+            android:id="@+id/sell"
+            android:layout_marginTop="10dp"
+            android:textSize="50dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_sell"
+            android:text="Sell"
+            android:onClick="book"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/atr_name"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/atr_name"
+            android:id="@+id/sel_image"
+            android:onClick="image"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/sell"
+            android:text="select image" />
+
+
+
+
+</RelativeLayout>

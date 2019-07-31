@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#429ed7"
+        android:textSize="25dp"
+        android:text="Items"
+
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#429ed7"
+        android:textSize="25dp"
+        android:text="Items"
+        android:padding="10dp"
+        android:layout_below="@+id/id"
+
+        />
+    <TextView
+        android:id="@+id/tuser_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#429ed7"
+        android:textSize="25dp"
+        android:layout_below="@+id/name"
+        android:text="Items"
+
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:id="@+id/tpassword"
+        android:layout_below="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#429ed7"
+        android:textSize="25dp"
+        android:text="Items"
+
+        android:padding="10dp"
+
+        />
+</RelativeLayout>
